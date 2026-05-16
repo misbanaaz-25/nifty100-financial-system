@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nifty 100 Financial Intelligence System</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            min-height: 100vh;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            color: #00d2ff;
+            text-shadow: 0 0 20px rgba(0,210,255,0.5);
+        }
+
+        header p {
+            font-size: 18px;
+            color: #a0aec0;
+            margin-top: 10px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px auto;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat h2 {
+            font-size: 36px;
+            color: #00d2ff;
+        }
+
+        .stat p {
+            color: #a0aec0;
+            font-size: 14px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 30px 25px;
+            width: 230px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,210,255,0.2);
+        }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            color: #00d2ff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 13px;
+            color: #a0aec0;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .card a {
+            display: block;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: opacity 0.3s;
+        }
+
+        .card a:hover {
+            opacity: 0.85;
+        }
+
+        .coming-soon a {
+            background: linear-gradient(90deg, #718096, #4a5568);
+            cursor: not-allowed;
+        }
+
+        .section-title {
+            text-align: center;
+            padding: 20px 0 10px;
+        }
+
+        .section-title h2 {
+            color: #00d2ff;
+            font-size: 28px;
+        }
+
+        .section-title p {
+            color: #a0aec0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #4a5568;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📈 Nifty 100 Financial Intelligence System</h1>
+        <p>India ke Top 100 Companies ka Complete Financial Analysis</p>
+    </header>
+
+    <div class="stats">
+        <div class="stat">
+            <h2>100</h2>
+            <p>Companies</p>
+        </div>
+        <div class="stat">
+            <h2>7</h2>
+            <p>Dashboards</p>
+        </div>
+        <div class="stat">
+            <h2>12+</h2>
+            <p>Years Data</p>
+        </div>
+        <div class="stat">
+            <h2>5</h2>
+            <p>APIs</p>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>🔗 Quick Links</h2>
+        <p>Saari cheezein ek jagah</p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">🏢</div>
+            <h3>Companies Data</h3>
+            <p>Saari Nifty 100 companies ka financial data ek jagah</p>
+            <a href="/companies/">Dekho →</a>
+        </div>
+        <div class="card">
+            <div class="icon">🔌</div>
+            <h3>REST API</h3>
+            <p>Developers ke liye professional API endpoints</p>
+            <a href="/api/companies/">Use Karo →</a>
+        </div>
+        <div class="card">
+            <div class="icon">📖</div>
+            <h3>API Docs</h3>
+            <p>Swagger documentation — API test karo browser se</p>
+            <a href="/api/docs/">Explore →</a>
+        </div>
+        <div class="card">
+            <div class="icon">📊</div>
+            <h3>Live Data</h3>
+            <p>PostgreSQL se real-time financial data</p>
+            <a href="/api/data/">Data Dekho →</a>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>📊 Power BI Dashboards</h2>
+        <p>7 Professional Dashboards — Coming Soon on Power BI Service</p>
+    </div>
+
+    <div class="cards">
+        <div class="card coming-soon">
+            <div class="icon">🌍</div>
+            <h3>Executive Overview</h3>
+            <p>Market snapshot aur sector distribution</p>
+            <a href="#" onclick="alert('Power BI account se publish hone ke baad available hoga!')">View Dashboard →</a>
+        </div>
+        <div class="card coming-soon">
+            <div class="icon">🔍</div>
+            <h3>Company Deep Dive</h3>
+            <p>Ek company ka complete analysis</p>
+            <a href="#" onclick="alert('Power BI account se publish hone ke baad available hoga!')">View Dashboard →</a>
+        </div>
+        <div class="card coming-soon">
+            <div class="icon">⚖️</div>
+            <h3>Sector Comparison</h3>
+            <p>Sectors ko compare karo</p>
+            <a href="#" onclick="alert('Power BI account se publish hone ke baad available hoga!')">View Dashboard →</a>
+        </div>
+        <div class="card coming-soon">
+            <div class="icon">💯</div>
+            <h3>Health Scorecard</h3>
+            <p>Companies ki health rating</p>
+            <a href="#" onclick="alert('Power BI account se publish hone ke baad available hoga!')">View Dashboard →</a>
+        </div>
+        <div class="card coming-soon">
+            <div class="icon">📈</div>
+            <h3>Growth Analytics</h3>
+            <p>Revenue aur profit growth</p>
+            <a href="#" onclick="alert('Power BI account se publish hone ke baad available hoga!')">View Dashboard →</a>
+        </div>
+        <div class="card coming-soon">
+            <div class="icon">💰</div>
+            <h3>Debt Monitor</h3>
+            <p>Companies ka debt track karo</p>
+            <a href="#" onclick="alert('Power BI account se publish hone ke baad available hoga!')">View Dashboard →</a>
+        </div>
+        <div class="card coming-soon">
+            <div class="icon">💵</div>
+            <h3>Dividend Returns</h3>
+            <p>Shareholder returns analysis</p>
+            <a href="#" onclick="alert('Power BI account se publish hone ke baad available hoga!')">View Dashboard →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built with Django + PostgreSQL + Power BI | Nifty 100 Financial Intelligence System</p>
+    </footer>
+
+</body>
+</html>
